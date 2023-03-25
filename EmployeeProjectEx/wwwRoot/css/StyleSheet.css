@@ -1,0 +1,63 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.employee {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    box-shadow: 0px 0px 5px #888888;
+}
+
+    .employee img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+
+    .employee h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .employee p {
+        font-size: 18px;
+        margin: 5px;
+        color: #888;
+    }
+
+    .button {
+    background-color: gray; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Display as inline block */
+    font-size: 16px; /* Font size */
+    margin: 10px 0; /* Margin */
+    cursor: pointer; /* Cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Transition effect on hover */
+}
+
+    button:hover {
+
+        background-color: black; /* Darker green background on hover */
+    }

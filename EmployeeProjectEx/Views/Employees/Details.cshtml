@@ -1,0 +1,19 @@
+﻿
+@model EmployeeModel;
+
+	<title>Employee Data</title>
+
+	<h1>Employee Data</h1>
+	<div class="container">
+			<div class="employee">
+
+				<img src="/Images/@Model.ImgeName" alt="@Model.Name">
+				<h2>@Model.Name</h2>
+				<p>@Model.Title</p>
+				<p>@Model.Description</p>
+				<p>mu@gmail.com</p>
+				<p>0096650147025</p>
+				<a asp-controller="Employees" asp-action="List" class="button">Home</a>
+			</div>
+	</div>
+

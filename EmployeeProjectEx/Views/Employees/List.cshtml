@@ -1,0 +1,30 @@
+﻿@model List<EmployeeModel>
+
+	<title>Employee Data</title>
+
+	<h1>Employee Data</h1>
+	<div class="container">
+	@{
+		foreach (var employee in Model)
+		{
+				<div class="employee">
+
+					<img src="/Images/@employee.ImgeName" alt="@employee.Name">
+					<h2>@employee.Name</h2>
+					<p>@employee.Title</p>
+					<p>@employee.Description</p>
+				@{
+					var parms = new Dictionary<string, string>()
+					{
+						{"id",@employee.Id.ToString() },
+						{"name",@employee.Name}
+					};
+					}
+					<a asp-controller="Employees" asp-action="Details" asp-all-route-data="parms" class="button">More informations</a>
+
+				</div>
+		}
+	}
+	</div>
+
+
